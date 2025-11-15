@@ -1,4 +1,6 @@
 import jobs from '../jobs.json'
+import JobListing from './JobListing';
+
 
 const JobListings = () => {
    
@@ -15,7 +17,7 @@ const JobListings = () => {
           
         {recentJobs.map((job)=>(
 
-<JobListings job={job} key={job.id}/>
+<JobListing job={job} key={job.id}/>
 
  ))}
 
